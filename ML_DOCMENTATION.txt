@@ -1,0 +1,43 @@
+3)Documentaion
+2} Image Dataset Using Logistic Regression
+@ A @ General Information On Dataset #
+Name of Dataset : German Traffic Road Signs (GTSRB)
+Name of Dataset File : GTSRB-Training_fixed.zip
+Number of Classes : 5
+	1-Speed20
+	2-Speed30
+	3-Speed50
+	4-Speed60
+	5-Speed70
+Total number of samples : 1000 image ppm format
+The size of each sample : vary between 3kb to 68kb
+Total size of Dataset : 10.4mb
+Number of samples used in training : 800
+Number of samples used in testing : 200
+
+-------------------------------------------------------
+@ B @ Implementation Details #
+Number of features extracted : 11016
+Names of features : unknown
+Dimentions: in Features matrix'features' : (number of samples, max_feature_length)
+Dimentions: in label array 'labels_numeric' will be (number of samples,)
+Cross validation : yes, it is used 
+Number of folds : 5
+Ratio of training/testing : 8/2
+Hyperparameters :
+	1-max_iter = 1000
+	2-solver = 'lbfgs'
+As initial learning rate : NONE
+Optimizer: NONE(direct)    Logistic regression main obtimizer is:-  Limited-memory Broyden–Fletcher–Goldfarb–Shanno (L-BFGS) optimization algorithm
+Regularization:   solver='lbfgs it includes regularization by default
+Batch size: none
+Number of epochs: none
+
+---------------------------------------------------------
+@ C @ Results Details #
+1/Loss Curve
+2/ROC Curve
+3/Accuracy
+4/Confusion Matrix
+
+
